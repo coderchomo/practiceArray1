@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for(let i=0;i<7;i++){
+        x=prompt("Input element of array here!");
+        x=parseInt(x);
+        array[i]=x;
+    }
+    document.write(array);
+    let v=prompt("Checking number");
+    v=parseInt(v);
+    for(let i=0;i<array.length;i++) {
+        if (v === array[i]) {
+                array[i] = array[i + 1];
+                v=array[i+1];
+            }else{
+            alert("Don't have your checking number in array");
+        }
+    }array[array.length-1]=0;
+    document.write("After clear your number you want : "+array);
+</script>
+</body>
+</html>

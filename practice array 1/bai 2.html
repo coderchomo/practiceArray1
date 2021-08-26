@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[11,7,19,95,304,407,420,10,77,666];
+  let max=arr[0];
+  for(let i=0;i<arr.length;i++){
+    if(max<=arr[i]){
+      max=arr[i];
+    }
+  }
+  a=arr.indexOf(max);
+  document.write("Biggest number is "+max+" in position "+a);
+
+</script>
+</body>
+</html>

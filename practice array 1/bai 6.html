@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for(let i=0;i<7;i++){
+        x=prompt("Input element of array here!");
+        x=parseInt(x);
+        array[i]=x;
+    }
+    let v=prompt("Checking number");
+    v=parseInt(v);
+    for(let i=0;i<array.length;i++){
+        if(v==array[i]){
+            document.write("V is in array");
+        }else{
+            document.write("V is not in array");
+            break;
+        }
+    }
+</script>
+</body>
+</html>

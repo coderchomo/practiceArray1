@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for(let i=0;i<10;i++){
+        x=prompt("number");
+        x=parseInt(x);
+        array[i]=x;
+    }
+    let max=array[0];
+    let sum=0;
+    let average;
+    avarage=parseFloat(average);
+    for(i=0;i<array.length;i++){
+        sum+=array[i];
+        if(max<=array[i]){
+            max=array[i];
+        }
+    }
+    average=sum/array.length;
+    document.write("Biggest number is "+max+" and average of array is "+average)
+</script>
+</body>
+</html>

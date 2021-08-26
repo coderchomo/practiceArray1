@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for(let i=0;i<4;i++){
+        x=prompt("Input element of array here!");
+        x=parseInt(x);
+        array[i]=x;
+    }
+    for(let i=0;i<array.length;i++){
+        for(let j=0;j<array.length;j++){
+            if(array[i]<=array[j]){
+                array[i]=array[j];
+            }
+        }
+    }
+    console.log(array);
+</script>
+</body>
+</html>

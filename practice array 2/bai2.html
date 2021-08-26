@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[];
+    for(let i=0;i<5;i++){
+        x=prompt("Input element of array here!");
+        array[i]=x;
+    }
+    let newarray=[];
+    for(let i=0;i<array.length;i++){
+        newarray[i]=array[(array.length-1)-i];
+    }
+    console.log(newarray);
+</script>
+</body>
+</html>

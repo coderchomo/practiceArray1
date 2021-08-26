@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    array=[];
+    let size=prompt("How many element you want in array?");
+    size=parseInt(size);
+    for(let i=0;i<size;i++){
+       let element=prompt("Please put element in array");
+       array[i]=element;
+    }
+    document.write(array+"<br>");
+    let count=0;
+    for(let i=0;i<array.length;i++){
+        if(isNaN(array[i])===false){
+            count++;
+        }
+    }document.write("Number in array: "+count);
+
+</script>
+</body>
+</html>

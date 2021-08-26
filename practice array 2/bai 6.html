@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    array=[];
+    let size=prompt("How many element you want in array?");
+    size=parseInt(size);
+    for(let i=0;i<size;i++){
+        let element=prompt("Please put element in array");
+        array[i]=element;
+    }
+    for(let i=0;i<array.length;i++){
+        if(array[i]==="-"){
+            array[i]="_";
+        }
+    }document.write(array);
+</script>
+</body>
+</html>

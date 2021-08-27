@@ -8,10 +8,18 @@
 <script>
   let a=prompt("string1");
   let b=prompt("string2");
-  if(a===b){
-      alert("string 1 same with string 2");
+  if(a.length===b.length){
+      for(let i=0;i<a.length;i++){
+          if(a[i]==b[i]){
+              document.write("string 1 same with string 2");
+              break;
+          }else{
+              document.write("String 1 # string 2");
+              break;
+          }
+      }
   }else{
-      alert("string 1 different with string 2");
+      document.write("string 1 different with string 2");
   }
 </script>
 </body>

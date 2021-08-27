@@ -9,11 +9,22 @@
   let search=prompt("What you want to search meaning?")
   let eng=["array","function","perimeter","splice","sort","pussy"];
   let vie=["mang","ham","chu vi","moi noi","sap xep","con so"];
-  let a=eng.indexOf(search);
-  if(a!==-1){
-      document.write(search+" mean "+vie[a]);
-  }else{
-      document.write("didn't found");
+  // let a=eng.indexOf(search);
+  // if(a!==-1){
+  //     document.write(search+" mean "+vie[a]);
+  // }else{
+  //     document.write("didn't found");
+  // }
+  let index;
+  index=parseInt(index);
+  for(let i=0;i<eng.length;i++){
+      if(search==eng[i]){
+          index=i;
+          document.write(search+" mean : "+vie[index]);
+      }else{
+          document.write("Didn't found");
+          break;
+      }
   }
 </script>
 </body>

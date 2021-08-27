@@ -6,8 +6,23 @@
 </head>
 <body>
 <script>
-    let str=prompt("Show me your string");
-    document.write(str.length);
+    let nacros="A realy good movie about nacros. If you don't know 'nacros' mean, it's mean dealer with cocain.";
+    console.log(nacros);
+    let count=1;
+    let keyboard=["`",1,2,3,4,5,6,7,8,9,0,"Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M","~","!","@","#","$","%","^","&","*","(",")","-","_","+","=","]","}","[","{","p","o","i","u","y","t","r","e","w","q","a","s","d","f","g","h","j","k","l","m","n","b","v","c","x","z",":",";","'","?","/",">",".","<",","]
+for(let i=0;i<nacros.length;i++){
+    if(nacros[i]==" "){
+        if(checkBelong(nacros[i-1])==true&&checkBelong(nacros[i+1])==true){
+            count++;
+        }
+    }
+}document.write("Have "+count+" word in this");
+function checkBelong(nacros){
+    let a=nacros;
+    for(let i=0;i<keyboard.length;i++){
+        if(a==keyboard[i]) return true;
+    } return false;
+}
 </script>
 </body>
 </html>
